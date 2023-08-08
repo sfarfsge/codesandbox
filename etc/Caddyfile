@@ -9,7 +9,10 @@ log {
 basicauth /$AUUID/* {
     $AUUID $MYUUID-HASH
 }
-
+@websocket_xray_vmess {
+  path /$AUUID-vmess
+}
+reverse_proxy @websocket_xray_vmess 127.0.0.1:7002
 
 @websocket_xray_trojan {
   path /$AUUID-trojan

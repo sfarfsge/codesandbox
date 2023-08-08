@@ -1,7 +1,11 @@
 {
     #"log": { "loglevel": "info" },
     "inbounds": 
-    [
+    [        {
+            "listen": "127.0.0.1","port": 7002,"protocol": "vmess",
+            "settings": {"clients": [{"id": "$AUUID"}]},
+            "streamSettings": {"network": "ws","wsSettings": {"path": "/$AUUID-vmess"}}
+        },
         {
             "listen": "127.0.0.1","port": 7003,"protocol": "trojan",
             "settings": {"clients": [{"password":"$AUUID"}]},
