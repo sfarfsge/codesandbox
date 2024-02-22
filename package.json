@@ -1,10 +1,10 @@
 {
-  "name": "express-hello-world",
+  "name": "express",
   "version": "1.0.0",
-  "description": "Express Hello World",
-  "main": "index.js",
+  "description": "Hello World",
+  "main": "index",
   "repository": "",
-  "author": "Misaka-blog",
+  "author": "M-blog",
   "license": "MIT",
   "private": false,
   "scripts": {
